@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+    background-color: hsla(0, 0%, 100%, 0.75);
+    justify-content: center;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95vh;
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 95%);
+    margin: 60px;
+}
+
+.page {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    padding-top: 20px;
+    color:  hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+    font-size: 9px;
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+img {
+    margin-bottom: 30px;
+    width: 45px;
+}
+
+.title {
+  color: hsl(0, 0%, 95%);
+  margin-bottom: 30px;
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 28px;
+}
+
+.review {
+    font-size: 11.3px;
+    line-height: 20px;
+}
+
+.button {
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 80px;
+    width: 120px;
+}
+
+.button1 {
+    color: hsl(31, 77%, 52%);
+}
+
+.button2 {
+color: hsl(184, 100%, 22%);
+}
+.button3 {
+    color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 600px) {
+    .app {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin-left: 30px;
+        margin-top: 80px;
+    }
+
+    .page {
+        padding: 60px;
+        height: 40%;
+        border: none;
+    }
+
+    img {
+        margin-bottom: 40px;
+        width: 80px;
+    }
+
+    .title {
+        font-size: 45px;
+    }
+
+    .review {
+        font-size: 19px;
+        line-height: 30px;
+        font-weight: normal;
+    }
+
+    .sedans {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .luxury {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .button {
+        font-size: 18px;
+        padding: 18px;
+        width: 65%;
+        margin-top: 30px;
+    }    
+
+}
